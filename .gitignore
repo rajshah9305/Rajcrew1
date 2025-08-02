@@ -1,98 +1,183 @@
-# Dependencies
-node_modules/
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-.pnpm-debug.log*
-jspm_packages/
-.npm/
-.yarn/
-.cache/
-.pnp/
-.pnp.js
+lerna-debug.log*
 
-# Build outputs
-dist/
-build/
-.next/
-out/
-.nuxt/
-.output/
-.vite/
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-*.sublime-project
-*.sublime-workspace
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Logs
-logs
-*.log
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
 
 # Runtime data
-pids/
+pids
 *.pid
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-.nyc_output/
+# Directory for compiled output
+dist
+build
+out
 
-# Next.js build output
-.next/
+# Dependency directories
+/node_modules/
+jspm_packages/
+/.pnp
+.pnp.js
 
-# Nuxt.js build / generate output
-.nuxt/
-dist/
+# Optional npm cache directory
+.npm/
 
-# Storybook build outputs
-.out/
-.storybook-out/
+# Optional eslint cache
+.eslintcache
 
-# Temporary folders
-tmp/
-temp/
+# Optional stylelint cache
+.stylelintcache
 
-# Local Netlify folder
-.netlify/
+# Optional Prettier cache
+.prettiercache
 
-# Vercel
-.vercel/
+# dotenv environment variables file
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on network volume
+.apdisk
+.Trashes
+
+# VS Code
+.vscode/
+
+# Editor directories and files
+.idea/
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+.history/
+.vs/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.bak
+*.pyc
 
 # Docker
 .dockerignore
-Dockerfile.local
-docker-compose.override.yml
+
+# Vercel
+.vercel/
+.turbo
+
+# Other
+*.tgz
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+*.bak
+*.tmp
+*.swp
+*.swo
+*.log
+*.sublime-build
+*.code-workspace
+*.iml
+*.classpath
+*.project
+.factorypath
+.c9/
+.gitpod.yml
+.gitpod/
+.terraform/
+.terraform.lock.hcl
+.terraformrc
+.terraformignore
+.terraform.d/
+.terraform.tfstate
+.terraform.tfstate.backup
+.terraform.tfvars
+.terraform.tfvars.json
+.terraform.override.tf
+.terraform.override.tf.json
+.terraform.plan
+.terraform.plan.json
+.terraform.lock.json
+.terraform.lock.hcl
+.terraform.lock.hcl.json
+.terraform.lock.hcl.json.bak
+.terraform.lock.hcl.json.old
+.terraform.lock.hcl.json.new
+.terraform.lock.hcl.json.tmp
+.terraform.lock.hcl.json.bak.old
+.terraform.lock.hcl.json.bak.new
+.terraform.lock.hcl.json.bak.tmp
+.terraform.lock.hcl.json.old.bak
+.terraform.lock.hcl.json.old.new
+.terraform.lock.hcl.json.old.tmp
+.terraform.lock.hcl.json.new.bak
+.terraform.lock.hcl.json.new.new
+.terraform.lock.hcl.json.new.tmp
+.terraform.lock.hcl.json.tmp.bak
+.terraform.lock.hcl.json.tmp.new
+.terraform.lock.hcl.json.tmp.tmp
+.terraform.lock.hcl.json.bak.old.bak
+.terraform.lock.hcl.json.bak.old.new
+.terraform.lock.hcl.json.bak.old.tmp
+.terraform.lock.hcl.json.bak.new.bak
+.terraform.lock.hcl.json.bak.new.new
+.terraform.lock.hcl.json.bak.new.tmp
+.terraform.lock.hcl.json.bak.tmp.bak
+.terraform.lock.hcl.json.bak.tmp.new
+.terraform.lock.hcl.json.bak.tmp.tmp
+.terraform.lock.hcl.json.old.bak.bak
+.terraform.lock.hcl.json.old.bak.new
+.terraform.lock.hcl.json.old.bak.tmp
+.terraform.lock.hcl.json.old.new.bak
+.terraform.lock.hcl.json.old.new.new
+.terraform.lock.hcl.json.old.new.tmp
+.terraform.lock.hcl.json.old.tmp.bak
+.terraform.lock.hcl.json.old.tmp.new
+.terraform.lock.hcl.json.old.tmp.tmp
+.terraform.lock.hcl.json.new.bak.bak
+.terraform.lock.hcl.json.new.bak.new
+.terraform.lock.hcl.json.new.bak.tmp
+.terraform.lock.hcl.json.new.new.bak
+.terraform.lock.hcl.json.new.new.new
+.terraform.lock.hcl.json.new.new.tmp
+.terraform.lock.hcl.json.new.tmp.bak
+.terraform.lock.hcl.json.new.tmp.new
+.terraform.lock.hcl.json.new.tmp.tmp
+.terraform.lock.hcl.json.tmp.bak.bak
+.terraform.lock.hcl.json.tmp.bak.new
+.terraform.lock.hcl.json.tmp.bak.tmp
+.terraform.lock.hcl.json.tmp.new.bak
+.terraform.lock.hcl.json.tmp.new.new
+.terraform.lock.hcl.json.tmp.new.tmp
+.terraform.lock.hcl.json.tmp.tmp.bak
+.terraform.lock.hcl.json.tmp.tmp.new
+.terraform.lock.hcl.json.tmp.tmp.tmp
 
 # Testing
-coverage/
-.nyc_output/
-junit.xml
+/coverage
+
+# Production
+/build
 
 # Misc
-*.tsbuildinfo
-.eslintcache
-.stylelintcache
+.yarn-integrity

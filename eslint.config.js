@@ -8,16 +8,15 @@ import { fixupConfigRules } from "@eslint/compat"
 
 export default [
   { ignores: ["dist"] },
-  { files: ["**/*.{js,mjs,cjs,jsx}"] },
   {
-    files: ["**/*.{js,jsx}"],
+    files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
-      parserOptions: {
-        ecmaVersion: "latest",
-        ecmaFeatures: { jsx: true },
-        sourceType: "module",
+      sourceType: "module",
+      globals: {
+        ...globals.browser,
+        window: "readonly",
+        document: "readonly",
       },
     },
     settings: { react: { version: "18.2" } },
@@ -31,6 +30,13 @@ export default [
       ...fixupConfigRules(pluginReactConfig),
       "react/jsx-no-target-blank": "off",
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      "no-unused-vars": "warn",
+      "no-console": "off",
     },
   },
+  {
+    languageOptions: { globals: globals.browser },
+  },
+  js.configs.recommended,
+  pluginReactConfig,
 ]

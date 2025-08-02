@@ -1,16 +1,17 @@
 # CrewAI Dashboard Pro
 
-An enterprise-grade dashboard for managing and monitoring multi-agent AI workflows powered by CrewAI.
+A comprehensive, enterprise-grade dashboard application for managing and monitoring CrewAI workflows.
 
 ## 🚀 Features
 
 ### Core Functionality
-- **Dashboard Overview**: Quick stats and system status.
-- **Agent Management**: Create, view, and manage AI agents with roles, goals, and tools.
-- **Task Orchestration**: Define and assign tasks to agents, track progress.
-- **Real-time Execution**: Simulate and monitor CrewAI execution with live logs and output streaming.
-- **File Management**: View and download generated reports and files.
+- **Dashboard Overview**: Quick insights into total executions, success rates, average duration, and costs.
+- **Agent Management**: Create, view, and manage your AI agents with detailed roles, goals, backstories, models, and tools.
+- **Task Management**: Define and assign tasks to agents, track their status, priority, and expected outputs.
+- **Real-time Execution**: Simulate CrewAI execution with live logs and streaming output.
+- **File Management**: Browse and download generated reports and files.
 - **Responsive Design**: Optimized for desktop and mobile devices.
+- **Modern UI/UX**: Built with React, Vite, and Tailwind CSS for a clean, intuitive, and performant interface.
 
 ### Technical Features
 - **Mobile-First Design**: Responsive across all devices
@@ -21,62 +22,16 @@ An enterprise-grade dashboard for managing and monitoring multi-agent AI workflo
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React 18 + Vite
-- **Styling**: Tailwind CSS with custom design system
-- **Animations**: Framer Motion
-- **Charts**: Recharts
+- **Frontend**: React.js
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
 - **Icons**: Lucide React
-- **State**: React Hooks
+- **State Management**: React Hooks (useState, useEffect, useCallback, useMemo)
 - **Notifications**: React Hot Toast
 
 ## 📦 Quick Start
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/your-username/crewai-dashboard-pro.git
-   cd crewai-dashboard-pro
-   \`\`\`
-
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   # or
-   yarn install
-   \`\`\`
-
-### Development
-
-To run the development server:
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
-This will start the Vite development server, usually at `http://localhost:3000`.
-
-### Building for Production
-
-To build the application for production:
-\`\`\`bash
-npm run build
-# or
-yarn build
-\`\`\`
-This will compile the application into the `dist` directory.
-
-### Preview Production Build
-
-To preview the production build locally:
-\`\`\`bash
-npm run preview
-# or
-yarn preview
+Follow the instructions in `SETUP.md` to get the project up and running.
 \`\`\`
 
 ## 🏗️ Build & Deploy
@@ -124,7 +79,7 @@ docker-compose up -d
 7. **Files** - Generated content management
 
 ### Key Components
-- **Agent Creation**: Role, goal, backstory, model selection
+- **Agent Creation**: Role, goal, backstory, model selection, temperature
 - **Task Assignment**: Priority levels, output formats
 - **Real-time Monitoring**: Streaming execution logs
 - **Performance Analytics**: Success rates, cost tracking
@@ -241,7 +196,7 @@ Referrer-Policy: strict-origin-when-cross-origin
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+We welcome contributions! Please see `CONTRIBUTING.md` (not included in this project, but a placeholder for future development) for guidelines.
 
 ## License
 
